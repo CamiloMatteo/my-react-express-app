@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "test-connect": "babel-node src/server/connect-db",
+    "initDB": "babel-node src/server/init-db"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +32,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.2",
+    "mongodb": "^3.5.3",
     "react-router-dom": "^4.3.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.1.2",
