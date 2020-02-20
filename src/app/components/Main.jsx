@@ -11,11 +11,9 @@ export const Main = () => (
     <Router history={history}>
         <Provider store={store}>
             <div>
-                {/* Dashboard Goes Here! */}
-                {/* <ConnectedDashboard /> */}
                 <ConnectedNavigation />
-                <Route exact path="/dashboard" render={ () => (<ConnectedDashboard/>) } />
-                <Route exact path="/task/:id" render={({match}) => (<ConnectTaskDetail match={match} />)} />
+                <Route exact path="/dashboard" render={() => (<ConnectedDashboard />)} />
+                <Route exact path="/task/:id" render={({ match }) => (<ConnectTaskDetail match={match} />)} />
             </div>
         </Provider>
     </Router>
